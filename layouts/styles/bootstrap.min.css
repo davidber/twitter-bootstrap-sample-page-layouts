@@ -356,7 +356,6 @@ button.btn::-moz-focus-inner,input[type=submit].btn::-moz-focus-inner{padding:0;
 .media-grid a:hover{border-color:#0069d6;-webkit-box-shadow:0 1px 4px rgba(0, 105, 214, 0.25);-moz-box-shadow:0 1px 4px rgba(0, 105, 214, 0.25);box-shadow:0 1px 4px rgba(0, 105, 214, 0.25);}
 
 /* Additional CSS by Sherzod Kutfiddinov - www.sherzod.me */
-body{background: url('../images/background.png') repeat top center;}
 .separator{ clear: both; width: 100%; height: 0px; font-size: 0px; border-bottom: 1px solid #DFE2E1; }
 .cleaner { clear: both; width: 100%; height: 0px; font-size: 0px;  }
 .cleaner_h5  { clear: both; width:100%; height: 5px; }
