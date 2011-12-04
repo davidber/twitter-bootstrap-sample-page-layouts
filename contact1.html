@@ -24,9 +24,6 @@
     <!-- Le styles -->
     <link href="styles/bootstrap.min.css" rel="stylesheet">
     <style type="text/css">
-      html, body{
-        background: url('images/background.png') repeat top center;
-      }
       body {
         padding-top: 60px;
       }
@@ -59,6 +56,8 @@
                 <li><a href="homepage1.html">Homepage 1</a></li>
                 <li class="divider"></li>
                 <li><a href="contact1.html">Contact 1</a></li>
+                <li class="divider"></li>
+                <li><a href="product1.html">Product 1 - eBay</a></li>
               </ul>
             </li>
           </ul>
@@ -75,7 +74,7 @@
     <div class="container">
 
       <div class="row">
-        <div class='span10'>
+        <div class='span8 offset1'>
           <h1>Contact Us</h1>
           
           <span class="label important">Error: Report code 123 to Agent 007</span><br/>
@@ -84,42 +83,44 @@
           
           <div class='cleaner_h20'></div>
           
-          <form class='form-stacked'>
-            <div class="clearfix">
-              <label for="name">Name</label>
-              <div class="input">
-                <input class="xlarge" id="name" name="name" size="30" type="text">
+          <div class='well span6'>
+            <form class='form-stacked'>
+              <div class="clearfix">
+                <label for="name">Name</label>
+                <div class="input">
+                  <input class="xlarge" id="name" name="name" size="30" type="text">
+                </div>
               </div>
-            </div>
-            
-            <div class="clearfix">
-              <label for="email">Email</label>
-              <div class="input">
-                <input class="xlarge" id="email" name="email" size="30" type="text">
+              
+              <div class="clearfix">
+                <label for="email">Email</label>
+                <div class="input">
+                  <input class="xlarge" id="email" name="email" size="30" type="text">
+                </div>
               </div>
-            </div>
-            
-            <div class="clearfix">
-              <label for="subject">Subject</label>
-              <div class="input">
-                <input class="xlarge" id="subject" name="subject" size="30" type="text">
+              
+              <div class="clearfix">
+                <label for="subject">Subject</label>
+                <div class="input">
+                  <input class="xlarge" id="subject" name="subject" size="30" type="text">
+                </div>
               </div>
-            </div>
-            
-            <div class="clearfix">
-              <label for="message">Message</label>
-              <div class="input">
-                <textarea class="xlarge" id="message" name="message" rows='10' style='resize:none;'></textarea>
+              
+              <div class="clearfix">
+                <label for="message">Message</label>
+                <div class="input">
+                  <textarea class="xlarge" id="message" name="message" rows='10' style='resize:none;'></textarea>
+                </div>
               </div>
-            </div>
-            
-            <div class='cleaner_h10'></div>
-            
-            <div class='cleaner_h10'></div>
-            
-            <input value='Send a Message' class="btn primary" type="submit"/>
-            <input value='Reset' class="btn" type="reset"/>
-          </form>
+              
+              <div class='cleaner_h10'></div>
+              
+              <div class='cleaner_h10'></div>
+              
+              <input value='Send a Message' class="btn primary" type="submit"/>
+              <input value='Reset' class="btn" type="reset"/>
+            </form>
+          </div>
         </div>
         
         <div class='span6'>

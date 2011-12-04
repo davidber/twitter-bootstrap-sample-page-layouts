@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Product 1 - eBay</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/bootstrap-dropdown.js"></script>
+    
+    <script type='text/javascript'>
+    $(document).ready(function(){
+      $('#topbar').dropdown();
+    });
+    </script>
+    
+    <!-- Le styles -->
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+      }
+      
+      #main-thumbnail{
+        text-align:center;
+        width:330px;
+        height:245px;
+        border: 1px solid #DFE2E1;
+        position:relative;
+      }
+      #main-thumbnail img{
+        max-width:330px;
+        max-height:230px;
+      }
+      #main-thumbnail p{
+        width:100%;
+        height:20px;
+        position:absolute;
+        bottom:-10px;
+        text-align:center;
+        font-weight:bold;
+        background-color:#999;
+        color:#ECECEC;
+      }
+      #main-thumbnail p:hover{
+        cursor:pointer;
+        background-color:#666;
+      }
+      
+      
+      .time-left{
+        font-family: arial;
+        font-size: 12pt;
+        font-weight: bold;
+        color: #F60;
+        line-height: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="topbar">
+      <div class="fill">
+        <div class="container span18">
+          <a class="brand" href="#">Project name</a>
+          <ul class="nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="dropdown" data-dropdown="dropdown">
+              <a href="#" class="dropdown-toggle">Templates</a>
+              <ul class="dropdown-menu">
+                <li><a href="default1.html">Default 1</a></li>
+                <li><a href="default2.html">Default 2</a></li>
+                <li><a href="default3.html">Default 3</a></li>
+                <li class="divider"></li>
+                <li><a href="homepage1.html">Homepage 1</a></li>
+                <li class="divider"></li>
+                <li><a href="contact1.html">Contact 1</a></li>
+                <li class="divider"></li>
+                <li><a href="product1.html">Product 1 - eBay</a></li>
+              </ul>
+            </li>
+          </ul>
+          
+          <form class="pull-left" action="">
+            <input type="text" placeholder="Search">
+              <button class="btn" type="submit">Go</button>
+          </form>
+          
+          <ul class="nav secondary-nav">
+            <li><a href="#">My Account</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container span18">
+      
+      <ul class="breadcrumb">
+        <li><a href="#">Home</a> <span class="divider">/</span></li>
+        <li><a href="#">Autos</a> <span class="divider">/</span></li>
+        <li><a href="#">BMW</a> <span class="divider">/</span></li>
+        <li class="active">M5</li>
+      </ul>
+      
+      <div class="row">
+        <div class='span14'>
+          <!-- Title & Description -->
+          <h1>BMW M5</h1>
+          <p style='margin-top:-20px'>
+            Lorem ipsum dolor sit amet, vel ut sint lucilius facilisi. Simul perpetua laboramus eos eu, vel veri zril nonumes ne. Eu assum omnes mei.
+          </p>
+          
+          <div class='cleaner_h20'></div>
+          
+          <!-- inside content -->
+          <div class='span14'>
+            <div class='row'>
+              <div class='span6'>
+                <div id='main-thumbnail'>
+                  <img src='images/sample/car3.jpg'/>
+                  <p>Expand</p>
+                </div>
+              </div>
+              
+              <!-- right side content - price and basic information -->
+              <div class='span8'>
+                
+                <div class='row'>
+                  <div class='span2'>
+                    Item Location:
+                  </div>
+                  <div class='span6'>
+                    Bellevue, Washington, United States
+                  </div>
+                </div>
+                
+                <div class='cleaner_h10'></div>
+                
+                <div class='row'>
+                  <div class='span2'>
+                    Time left:
+                  </div>
+                  <div class='span6'>
+                    <span class='time-left'>1d 13h</span> (Dec 08, 2011 08:05:04 PST)
+                  </div>
+                </div>
+                
+                <div class='cleaner_h10'></div>
+                
+                <div class='row'>
+                  <div class='span2'>
+                    Bids history:
+                  </div>
+                  <div class='span6'>
+                    <a href='#'>2 Bids</a>
+                  </div>
+                </div>
+                
+                <div class='cleaner_h10'></div>
+                
+                <div class='row well'>
+                  <div class='row'>
+                    <div class='span2' style='margin-top:10px;'>
+                      Price:
+                    </div>
+                    <div class='span5'>
+                      <h4 style='display:inline;'>US $44,898.00</h4> &nbsp;&nbsp;
+                      <button class='btn primary'>Buy It Now</button><br/>
+                      <a href='#'>immediate deposit of US $500.00 required</a>
+                    </div>
+                  </div>
+                  
+                  <div class='cleaner_h20'></div>
+                  
+                  <div class='row'>
+                    <div class='span2' style='margin-top:10px;'>
+                      Best Offer:
+                    </div>
+                    <div class='span5'>
+                      <button class='btn primary'>Make Offer</button>
+                    </div>
+                  </div>
+                </div><!-- end of row well -->
+                
+                <div class='row'>
+                  <div class='offset2 span6'>
+                    <a href='#'>Get low monthly payments</a>
+                  </div>
+                </div>
+                <div class='cleaner_h10'></div>
+                
+                <div class='row'>
+                  <div class='offset2 span6'>
+                    <a href='#'>Order an independent inspection</a>
+                  </div>
+                </div>
+                <div class='cleaner_h10'></div>
+                
+                <div class='row'>
+                  <div class='span2'>
+                    Payment:
+                  </div>
+                  <div class='span6'>
+                    Deposit of US $500.00 within 24 hours of auction close. Immediate deposit required for Buy It Now. Full payment required within 7 days of auction close.
+                  </div>
+                </div>
+                <div class='cleaner_h10'></div>
+                
+                <div class='row'>
+                  <div class='span2'>
+                    Shipping:
+                  </div>
+                  <div class='span6'>
+                    Buyer responsible for vehicle pick-up or shipping.
+                    <a href='#'>Vehicle shipping quote is available.</a>
+                  </div>
+                </div>
+                <div class='cleaner_h10'></div>
+                
+                <div class='row'>
+                  <div class='span2'>
+                    Coverage:
+                  </div>
+                  <div class='span6'>
+                    This vehicle is eligible for up to $50,000 in Vehicle Purchase Protection. <a href='#'>Restrictions Apply</a>.
+                    (Not eligible for eBay Buyer Protection)
+                  </div>
+                </div>
+              </div><!-- end of right side content - price and basic description -->
+            </div>
+          </div>
+          
+        </div>
+        
+        <div class='span4'>
+          <h3>Seller Info</h3>
+          <h4 style='display:inline;'>shershams</h4> (661 &#10026;)
+          <div class='cleaner'></div>
+          &#10029;&#10029;&#10029;&#10029;&#10025; 82% Positive feedback
+          <div class='cleaner_h10'></div>
+          
+          <a href='#'>Ask a question</a>
+          <div class='cleaner_h5'></div>
+          <a href='#'>Save this seller</a>
+          <div class='cleaner_h5'></div>
+          <a href='#'>See other items</a>
+          <div class='cleaner_h5'></div>
+          
+          <div class='cleaner_h10'></div>
+          
+          <h3>Location</h3>
+          <address>
+            <strong>Sherzod K. Inc.</strong></br>
+            12345 99th Ave SE<br/>
+            Seattle, Wa 98000
+          </address>
+        </div>
+        
+        <div class='span4'>
+          <iframe width="220" height="280" frameborder="1" scrolling="yes" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=seattle+downtown&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=56.06887,64.6875&amp;vpsrc=0&amp;ie=UTF8&amp;hq=&amp;hnear=Seattle,+King,+Washington&amp;t=m&amp;z=10&amp;iwloc=near&amp;output=embed"></iframe><br />
+          <small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=seattle+downtown&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=56.06887,64.6875&amp;vpsrc=0&amp;ie=UTF8&amp;hq=&amp;hnear=Seattle,+King,+Washington&amp;t=m&amp;z=10&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+        </div>
+      </div><!-- end of row -->
+      
+      <div class='separator cleaner_h20'></div>
+      <div class='cleaner_h20'></div>
+      
+      <!-- main description -->
+      <div class='row'>
+        <div class='span18'>
+          <h4>2008 BMW 5 Series M5</h4>
+          <p>
+            You are looking at an absolutely stunning and hard to find 1 Owner / Dealer Maintained 6-speed Manual transmission 2008 BMW M5 (E60) Sedan with only 42K miles. The exterior is a rare Alpine White seamlessly matched to a luxurious Portland Brown leather interior, topped off by the elegant wood inlays throughout. This M Series is equipped with a 5.0L Double-VANOS 40_Valve DOHC V10 Motor, boasting an amazing 500 Horsepower. This motor coupled to 6 speed manual transmission delivers a blistering 0-60 of 4.2 seconds. The soulful note coming from the quad tipped exhaust and the driving experience signature to BMWs M Series is unparalleled.
+          </p>
+          <p>
+            This M5 comes loaded with amenities which include, power windows, power locks, power mirrors, multi directional power moon roof, multi directional power seats with 2 set memory and active bolster support, keyless push button start, premium sound, cd, navigation, auxiliary plug-in, parking sensors front and rear, power tilt steering column, comfort steering controls, cruise control, dual zone climate control, heated seats, 19" staggered wheels, cross drilled rotors front and rear, Electronic Damping Control (EDC), M Dynamic Mode (MDM), auto dimming rearview mirror, homelink universal garage door opener, Alcantara headliner, rear lip spoiler, front and rear curtain airbags, front and rear side impact door airbags and much much more. We do have one remote key as well as the floor mats (please refer to photos for more details).
+          </p>
+          <p>
+            The paint on this M is bright and shiny with no major defects to report, showing less than average wear to be expected from this year and mileage vehicle. The interior is nice and neat and the leather is rich and supple less to the touch, showing than average wear to be expected from this year and mileage vehicle (please refer to our high resolution photos and judge for yourself). The vehicle starts, runs, drives and shifts smoothly with no issues to report. This is a 1 owner dealer maintained Arizona vehicle with a clean Carfax. We carefully hand select all our vehicles in an effort to deliver a superior product, please feel free to ask any and all questions prior to making your purchase.   We take great pride and care with all our vehicles, this is not just a business it's a passion.
+          </p>
+        </div>
+      </div>
+      <!-- end of main description -->
+      
+      <footer>
+        <p>&copy; Company 2011 By <a href='http://www.sherzod.me' target='_blank' title='Professional Web Developer'>Sherzod Kutfiddinov</a></p>
+      </footer>
+
+    </div> <!-- /container -->
+
+  </body>
+</html>
