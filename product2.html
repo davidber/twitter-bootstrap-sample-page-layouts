@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Product 2 - Classifieds</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/bootstrap-dropdown.js"></script>
+    
+    <script type='text/javascript'>
+    $(document).ready(function(){
+      $('#topbar').dropdown();
+    });
+    
+    $(document).delegate('#flag span.label', 'click', function(){
+      resetFlags();
+      
+      $(this).siblings('span.label').removeClass('warning success important notice');
+    });
+    
+    function resetFlags(){
+      $('#flag span.label[data-flag=spam]').addClass('important');
+      $('#flag span.label[data-flag=prohibited]').addClass('warning');
+      $('#flag span.label[data-flag=miscat]').addClass('notice');
+      $('#flag span.label[data-flag=best]').addClass('success');
+    }
+    </script>
+    
+    <!-- Le styles -->
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+      }
+      #thumbnails{
+        text-align:center;
+      }
+      #thumbnails img{
+        max-height:150px;
+        max-width:240px;
+        vertical-align:middle;
+        cursor:pointer;
+      }
+      #flag span.label{
+        cursor:pointer;
+      }
+      #next_thumb, #prev_thumb{
+        font-size:25pt;
+        padding-top:65px;
+        height:85px;
+        width:30px;
+        text-align:center;
+        cursor:pointer;
+      }
+      #next_thumb:hover, #prev_thumb:hover{
+        background-color:#eee;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="topbar">
+      <div class="fill">
+        <div class="container span18">
+          <a class="brand" href="#">Project name</a>
+          <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="index.html">Sample</a></li>
+            <li class="dropdown" data-dropdown="dropdown">
+              <a href="#" class="dropdown-toggle">Templates</a>
+              <ul class="dropdown-menu">
+                <li><a href="default1.html">Default 1</a></li>
+                <li><a href="default2.html">Default 2</a></li>
+                <li><a href="default3.html">Default 3</a></li>
+                <li class="divider"></li>
+                <li><a href="homepage1.html">Homepage 1</a></li>
+                <li><a href="homepage2.html">Homepage 2</a></li>
+                <li><a href="homepage2.v2.html">Homepage 2 - v.2</a></li>
+                <li class="divider"></li>
+                <li><a href="login1.html">Login 1</a></li>
+                <li class="divider"></li>
+                <li><a href="contact1.html">Contact 1</a></li>
+                <li class="divider"></li>
+                <li><a href="product1.html">Product 1</a></li>
+                <li><a href="product1.html">Product 2</a></li>
+              </ul>
+            </li>
+          </ul>
+          
+          <form class="pull-left" action="">
+            <input type="text" placeholder="Search">
+              <button class="btn" type="submit">Go</button>
+          </form>
+          
+          <ul class="nav secondary-nav">
+            <li><a href="#">My Account</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container span18">
+      
+      <ul class="breadcrumb">
+        <li><a href="#">Home</a> <span class="divider">/</span></li>
+        <li><a href="#">Autos</a> <span class="divider">/</span></li>
+        <li><a href="#">BMW</a> <span class="divider">/</span></li>
+        <li class="active">M5</li>
+      </ul>
+      
+      <div class="row">
+        <div class='span14'>
+          <!-- Title & Description -->
+          <h1>BMW M5</h1>
+          <div id='prev_thumb' class='pull-left'>&laquo;</div>
+          <div id='next_thumb' class='pull-right'>&raquo;</div>
+          
+          <div id='thumbnails'>
+            <img src='images/sample/car1.jpg'/>
+            <img src='images/sample/car2.jpg'/>
+            <img src='images/sample/car3.jpg'/>
+          </div>
+        </div>
+        
+        <div class='span4'>
+          <h3>Seller Info</h3>
+          <h4 style='display:inline;'>shershams</h4> ( 661 <span style='font-size:12pt;'>&#10031;</span> )
+          <div class='cleaner'></div>
+          &#10030;&#10030;&#10030;&#10030;&#10025; 82% Positive feedback
+          <div class='cleaner_h10'></div>
+          
+          <a href='#'>Contact the seller</a>
+          <div class='cleaner_h5'></div>
+          <a href='#'>Save this seller</a>
+          <div class='cleaner_h5'></div>
+          <div id='flag'>
+            Flag this post:
+            <div class='cleaner'></div>
+            <span class='label important' data-flag='spam'>Spam / Overpost</span>
+            <span class='label warning' data-flag='prohibited'>Prohibited</span>
+            <span class='label notice' data-flag='miscat'>Miscategorized</span>
+            <span class='label success' data-flag='best'>Vote Up</span>
+          </div>
+        </div>
+      </div><!-- end of row -->
+      
+      <div class='separator cleaner_h20'></div>
+      <div class='cleaner_h20'></div>
+      
+      <!-- main description -->
+      <div class='row'>
+        <div class='span18'>
+          <h4>2008 BMW 5 Series M5</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at quam nibh, vitae placerat est. Suspendisse turpis dui, tempus et semper ac, tempus sagittis arcu. Maecenas auctor, nisl et pellentesque venenatis, mi mauris malesuada mauris, et tincidunt lectus arcu eu ipsum. Maecenas id nisi est, nec eleifend velit. Phasellus mi turpis, convallis a imperdiet eu, facilisis sed risus. Quisque rhoncus nunc nec nunc volutpat porttitor. Praesent lacus magna, pellentesque nec pharetra non, varius accumsan ante. Curabitur elementum semper lobortis. Aenean blandit fringilla tortor in vulputate.
+          </p>
+          <p>
+            Donec fringilla sem quis ligula eleifend congue. Sed sodales risus id sapien hendrerit vel gravida justo porta. Duis faucibus tempus massa, sit amet pellentesque augue consectetur eu. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In hac habitasse platea dictumst. Nam quis nisi ut magna sodales consectetur. Suspendisse eget mi leo, eget commodo ante. Nunc cursus arcu eget urna suscipit rutrum. Nulla facilisi. Donec sem diam, hendrerit scelerisque ullamcorper non, semper vitae metus. Nulla facilisi. Mauris id convallis sapien. Nullam nec tellus ut velit pellentesque rutrum. Curabitur sit amet ligula sit amet leo gravida vestibulum. Integer interdum cursus nisl a commodo. Integer neque odio, pretium eu consectetur posuere, tincidunt ac urna.
+          </p>
+          <p>
+            Praesent lacinia diam sed lorem pellentesque eu molestie risus sollicitudin. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi eu velit a ante feugiat scelerisque at commodo quam. Integer in porta nunc. Nam id elit vitae sem venenatis ornare sed et mi. Maecenas vel vestibulum libero. Nulla purus dui, tincidunt quis fringilla nec, gravida ac diam.
+          </p>
+        </div>
+      </div>
+      <!-- end of main description -->
+      
+      <footer>
+        <p>&copy; Company 2011 By <a href='http://www.sherzod.me' target='_blank' title='Professional Web Developer'>Sherzod Kutfiddinov</a></p>
+      </footer>
+
+    </div> <!-- /container -->
+
+  </body>
+</html>
