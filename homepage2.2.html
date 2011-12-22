@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Homepage 2</title>
+    <title>Homepage 2.2</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -26,11 +26,34 @@
       body {
         padding-top: 60px;
       }
-      .categories li{
-        
+      .content-row div{
+        display:inline-block;
+        width:192px;
       }
-      .categories li:focus{
-        
+      .content-row input.btn{
+        margin:auto;
+        font-weight:bold;
+        width:100%;
+      }
+      img.content-thumbnail{
+        width:100%;
+      }
+      .title{
+        font-weight:bold;
+        font-size:18pt;
+        text-align:center;
+      }
+      .current-price{
+        color:#b94a48;
+        font-weight:bold;
+        font-size:22pt;
+        text-align:center;
+      }
+      .time-left{
+        color:#468847;
+        font-weight:bold;
+        font-size:18pt;
+        text-align:center;
       }
     </style>
 
@@ -90,7 +113,6 @@
 
     <div class="container">
 
-      <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit span8 pull-left" style='height:200px;'>
         <h1>Welcome!</h1>
         <p>Some promotional message goes here. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
@@ -143,82 +165,54 @@
       
       <div class='cleaner'></div>
       
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="span4">
-          <h2>Real Estate</h2>
-          <ul class='unstyled categories'>
-            <li><a href='#'><span>Real Estate Category 1</span></a></li>
-            <li><a href='#'><span>Real Estate Category 2</span></a></li>
-            <li><a href='#'><span>Real Estate Category 3</span></a></li>
-            <li><a href='#'><span>Real Estate Category 4</span></a></li>
-            <li><a href='#'><span>Real Estate Category 5</span></a></li>
-            <li><a href='#'><span>Real Estate Category 6</span></a></li>
-            <li><a href='#'><span>Real Estate Category 7</span></a></li>
-            <li><a href='#'><span>Real Estate Category 8</span></a></li>
-            <li><a href='#'><span>Real Estate Category 9</span></a></li>
-          </ul>
-          <p><a class="btn" href="#">View all &raquo;</a></p>
-        </div>
-        <div class="span3">
-          <h2>For Sale</h2>
-          <ul class='unstyled categories'>
-            <li><a href='#'><span>For Sale Category 1</span></a></li>
-            <li><a href='#'><span>For Sale Category 2</span></a></li>
-            <li><a href='#'><span>For Sale Category 3</span></a></li>
-            <li><a href='#'><span>For Sale Category 4</span></a></li>
-            <li><a href='#'><span>For Sale Category 5</span></a></li>
-            <li><a href='#'><span>For Sale Category 6</span></a></li>
-            <li><a href='#'><span>For Sale Category 7</span></a></li>
-            <li><a href='#'><span>For Sale Category 8</span></a></li>
-            <li><a href='#'><span>For Sale Category 9</span></a></li>
-          </ul>
-          <p><a class="btn" href="#">View all &raquo;</a></p>
-        </div>
-        <div class="span3">
-          <h2>Services</h2>
-          <ul class='unstyled categories'>
-            <li><a href='#'><span>Services Category 1</span></a></li>
-            <li><a href='#'><span>Services Category 2</span></a></li>
-            <li><a href='#'><span>Services Category 3</span></a></li>
-            <li><a href='#'><span>Services Category 4</span></a></li>
-            <li><a href='#'><span>Services Category 5</span></a></li>
-            <li><a href='#'><span>Services Category 6</span></a></li>
-            <li><a href='#'><span>Services Category 7</span></a></li>
-            <li><a href='#'><span>Services Category 8</span></a></li>
-            <li><a href='#'><span>Services Category 9</span></a></li>
-          </ul>
-          <p><a class="btn" href="#">View all &raquo;</a></p>
-        </div>
-        <div class="span3">
-          <h2>Jobs</h2>
-          <ul class='unstyled categories'>
-            <li><a href='#'><span>Jobs Category 1</span></a></li>
-            <li><a href='#'><span>Jobs Category 2</span></a></li>
-            <li><a href='#'><span>Jobs Category 3</span></a></li>
-            <li><a href='#'><span>Jobs Category 4</span></a></li>
-            <li><a href='#'><span>Jobs Category 5</span></a></li>
-            <li><a href='#'><span>Jobs Category 6</span></a></li>
-            <li><a href='#'><span>Jobs Category 7</span></a></li>
-            <li><a href='#'><span>Jobs Category 8</span></a></li>
-            <li><a href='#'><span>Jobs Category 9</span></a></li>
-          </ul>
-          <p><a class="btn" href="#">View all &raquo;</a></p>
-        </div>
-        <div class="span3">
-          <h2>Events</h2>
-          <ul class='unstyled categories'>
-            <li><a href='#'><span>Events Category 1</span></a></li>
-            <li><a href='#'><span>Events Category 2</span></a></li>
-            <li><a href='#'><span>Events Category 3</span></a></li>
-            <li><a href='#'><span>Events Category 4</span></a></li>
-            <li><a href='#'><span>Events Category 5</span></a></li>
-            <li><a href='#'><span>Events Category 6</span></a></li>
-            <li><a href='#'><span>Events Category 7</span></a></li>
-            <li><a href='#'><span>Events Category 8</span></a></li>
-            <li><a href='#'><span>Events Category 9</span></a></li>
-          </ul>
-          <p><a class="btn" href="#">View all &raquo;</a></p>
+      <div class='span16'>
+        <div class='content-row'>
+          
+          <div class='well'>
+            <img src='images/sample/car3.jpg' class='content-thumbnail'/>
+            <div class='cleaner'></div>
+            <div class='title'>BMW M5</div>
+            <div class='cleaner'></div>
+            <div class='current-price'>$25.30</div>
+            <div class='cleaner'></div>
+            <div class='time-left'>16:30:30</div>
+            <div class='cleaner'></div>
+            <input type='button' class='btn primary large' value='Bid'/>
+          </div>
+          <div class='well'>
+            <img src='images/sample/car3.jpg' class='content-thumbnail'/>
+            <div class='cleaner'></div>
+            <div class='title'>BMW M5</div>
+            <div class='cleaner'></div>
+            <div class='current-price'>$25.30</div>
+            <div class='cleaner'></div>
+            <div class='time-left'>16:30:30</div>
+            <div class='cleaner'></div>
+            <input type='button' class='btn primary large' value='Bid'/>
+          </div>
+          <div class='well'>
+            <img src='images/sample/car3.jpg' class='content-thumbnail'/>
+            <div class='cleaner'></div>
+            <div class='title'>BMW M5</div>
+            <div class='cleaner'></div>
+            <div class='current-price'>$25.30</div>
+            <div class='cleaner'></div>
+            <div class='time-left'>16:30:30</div>
+            <div class='cleaner'></div>
+            <input type='button' class='btn primary large' value='Bid'/>
+          </div>
+          <div class='well'>
+            <img src='images/sample/car3.jpg' class='content-thumbnail'/>
+            <div class='cleaner'></div>
+            <div class='title'>BMW M5</div>
+            <div class='cleaner'></div>
+            <div class='current-price'>$25.30</div>
+            <div class='cleaner'></div>
+            <div class='time-left'>16:30:30</div>
+            <div class='cleaner'></div>
+            <input type='button' class='btn primary large' value='Bid'/>
+          </div>
+          
         </div>
       </div>
 
