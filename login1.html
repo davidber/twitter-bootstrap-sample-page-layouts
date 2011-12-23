@@ -20,6 +20,19 @@
       
       $('#username_in').focus();
     });
+    
+    $(document).delegate('.switch', 'click', function(){
+      
+      var c = $(this).attr('data-switch');
+      $('#sign-in-form').slideUp(500, function(){ $(this).addClass('hide'); });
+      $('#forgot-password-form').slideUp(500, function(){ $(this).addClass('hide'); });
+      $('#'+c).slideDown(500, function(){
+        $(this).removeClass('hide');
+        $('input:first', this).focus();
+      });
+      c = null;
+      
+    });
     </script>
     
     <!-- Le styles -->
@@ -28,11 +41,9 @@
       body {
         padding-top: 60px;
       }
-      .categories li{
-        
-      }
-      .categories li:focus{
-        
+      .switch{
+        display:inline-block;
+        cursor:pointer;
       }
     </style>
 
@@ -94,22 +105,10 @@
       <div class='row'>
         <!-- Main hero unit for a primary marketing message or call to action -->
         <div class="well span6 offset2">
-          <form class='form-stacked'>
+          <form class='form-stacked' id='sign-up-form'>
             <h2>Sign Up for Free</h2>
             
             <div class='cleaner_h20'></div>
-            
-            <div class="clearfix">
-              <label for="name_up">Name</label>
-              <div class="input">
-                <input id="name_up" name="name_up" size="30" type="text" class='xlarge'/>
-                <!--
-                <span class="help-block">
-                  <span class='label important'>Warning</span> we need your name
-               </span>
-                -->
-              </div>
-            </div>
             
             <div class="clearfix">
               <label for="email_up">Email</label>
@@ -163,8 +162,8 @@
           </form>
         </div>
         
-        <div class="well span5" style='height:280px;'>
-          <form class='form-stacked'>
+        <div class="well span5">
+          <form class='form-stacked' id='sign-in-form'>
             <h2>Sign In</h2>
             
             <div class='cleaner_h20'></div>
@@ -204,6 +203,30 @@
             
             <div class='cleaner_h20'></div>
             <input type='submit' value='Sign In &raquo;' id='submit_in' name='submit_in' class="btn primary"/>
+            <span class='switch' data-switch='forgot-password-form'>Forgot my password</span>
+          </form>
+          
+          <form class='form-stacked hide' id='forgot-password-form'>
+            <h2>Forgot Password</h2>
+            
+            <div class='cleaner_h20'></div>
+            
+            <div class="clearfix">
+              <label for="email_pwd">Email</label>
+              <div class="input">
+                <input id="email_pwd" name="email_pwd" size="30" type="text"/>
+                <!--
+                <span class="help-block">
+                  <span class='label important'>Warning</span> the username already exists
+                </span>
+                -->
+                <div class='cleaner_h10'></div>
+                <span class='switch' data-switch='sign-in-form'>Never mind, I remember my password</span>
+              </div>
+            </div>
+            
+            <div class='cleaner_h20'></div>
+            <input type='submit' value='Sign In &raquo;' id='submit_pwd' name='submit_pwd' class="btn primary"/>
           </form>
         </div>
       </div>
