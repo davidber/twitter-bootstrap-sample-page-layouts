@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Account 1 - Settings</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/bootstrap-dropdown.js"></script>
+    
+    <script type='text/javascript'>
+    $(document).ready(function(){
+      $('#topbar').dropdown();
+    });
+    
+    $(document).delegate('.switch', 'click', function(){
+      
+      var c = $(this).attr('data-switch');
+      $('#account-settings-form').slideUp(300, function(){ $(this).addClass('hide'); });
+      $('#reset-password-form').slideUp(300, function(){ $(this).addClass('hide'); });
+      $('#'+c).slideDown(300, function(){
+        $(this).removeClass('hide');
+        $('input:first', this).focus();
+      });
+      c = null;
+      
+    });
+    </script>
+    
+    <!-- Le styles -->
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+      }
+      .sidebar.well.span4{
+        width: 180px;
+      }
+      .switch{
+        display:inline-block;
+        cursor:pointer;
+      }
+    </style>
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  </head>
+
+  <body>
+
+    <div class="topbar">
+      <div class="fill">
+        <div class="container span18">
+          <a class="brand" href="index.html">Project X</a>
+          <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="index.html">Sample</a></li>
+          </ul>
+          
+          <form class="pull-left" action="">
+            <input type="text" placeholder="Search">
+              <button class="btn" type="submit">Go</button>
+          </form>
+          
+          <p class="pull-right">Logged in as <a href="#">shershams</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container span18">
+      <div class='cleaner_h40'></div>
+      
+      <div class='row'>
+        <div class="well span4 sidebar">
+            <h4>shershams - 62 &cent;</h4>
+            <div class='cleaner_h10'></div>
+            
+            <div class='btn primary large'>Post a new Ad</div>
+            <div class='cleaner_h20'></div>
+            
+            <p><a href='account1.html'>Main</a></p>
+            <p><a href='#'>Messages (3 new)</a></p>
+            <p><a href='#'>Expired / Deleted Ads</a></p>
+            <p><a href='account1.settings.html'>Account Settings</a></p>
+            <p><a href='#'>Help</a></p>
+        </div><!-- end of sidebar -->
+        
+        <div class='span14'>
+          <form id='account-settings-form'>
+              <h2>Account Settings</h2>
+              <div class='cleaner_h20'></div>
+              
+              <div class="clearfix">
+                <label for="settings_email">Email</label>
+                <div class="input">
+                  <input class="xlarge" id="settings_email" name="settings_email" size="30" type="text">
+                </div>
+              </div>
+              
+              <div class="clearfix">
+                <label for="settings_phone">Phone #</label>
+                <div class="input">
+                  <input class="xlarge" id="settings_phone" name="settings_phone" size="30" type="text">
+                </div>
+              </div>
+              
+              <div class="clearfix">
+                <label>Notifications</label>
+                <div class="input">
+                  <ul class="inputs-list">
+                    <li>
+                      <label>
+                        <input type="checkbox" name="settings_email_notifications" value="email" checked='true'>
+                        <span>Email</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="clearfix">
+                <div class="input">
+                  <div class='btn switch' data-switch='reset-password-form'>Reset Password</div>
+                  <input type='submit' value='Save Settings &raquo;' id='submit_settings' name='submit_settings' class="btn primary"/>
+                </div>
+              </div>
+          </form>
+          
+          <form id='reset-password-form' class='hide'>
+              <h2>Reset Password</h2>
+              <div class='cleaner_h20'></div>
+              <div class="clearfix">
+                <label for="reset_old_pwd">Old Password</label>
+                <div class="input">
+                  <input class="xlarge" id="reset_old_pwd" name="reset_old_pwd" size="30" type="text">
+                </div>
+              </div>
+              
+              <div class="clearfix">
+                <label for="reset_new_pwd">New Password</label>
+                <div class="input">
+                  <input class="xlarge" id="reset_new_pwd" name="reset_new_pwd" size="30" type="text">
+                </div>
+              </div>
+              
+              <div class="clearfix">
+                <label for="reset_new_pwd_c">Confirm New Password</label>
+                <div class="input">
+                  <input class="xlarge" id="reset_new_pwd_c" name="reset_new_pwd_c" size="30" type="text">
+                </div>
+              </div>
+              
+              <div class="clearfix">
+                <div class="input">
+                  <div class="switch btn" data-switch='account-settings-form'>Cancel</div>
+                  <input type='submit' value='Save Password &raquo;' id='submit_settings' name='submit_settings' class="btn primary"/>
+                </div>
+              </div>
+          </form>
+        </div><!-- end of center content -->
+      </div>
+
+      <footer>
+        <p>&copy; Company 2011 <a href='http://www.sherzod.me' target='_blank' title='Professional Web Developer'>Sherzod Kutfiddinov</a></p>
+      </footer>
+    </div>
+
+  </body>
+</html>

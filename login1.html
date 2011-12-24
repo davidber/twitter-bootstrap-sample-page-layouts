@@ -24,9 +24,9 @@
     $(document).delegate('.switch', 'click', function(){
       
       var c = $(this).attr('data-switch');
-      $('#sign-in-form').slideUp(500, function(){ $(this).addClass('hide'); });
-      $('#forgot-password-form').slideUp(500, function(){ $(this).addClass('hide'); });
-      $('#'+c).slideDown(500, function(){
+      $('#sign-in-form').slideUp(300, function(){ $(this).addClass('hide'); });
+      $('#forgot-password-form').slideUp(300, function(){ $(this).addClass('hide'); });
+      $('#'+c).slideDown(300, function(){
         $(this).removeClass('hide');
         $('input:first', this).focus();
       });
@@ -59,34 +59,10 @@
     <div class="topbar">
       <div class="fill">
         <div class="container">
-          <a class="brand" href="#">Project name</a>
+          <a class="brand" href="index.html">Project X</a>
           <ul class="nav">
             <li><a href="index.html">Home</a></li>
             <li class="active"><a href="index.html">Sample</a></li>
-            <li class="dropdown" data-dropdown="dropdown">
-              <a href="#" class="dropdown-toggle">Templates</a>
-              <ul class="dropdown-menu">
-                <li><a href="default1.html">Default 1</a></li>
-                <li><a href="default2.html">Default 2</a></li>
-                <li><a href="default3.html">Default 3</a></li>
-                <li class="divider"></li>
-                <li><a href="homepage1.html">Homepage 1</a></li>
-                <li><a href="homepage2.html">Homepage 2</a></li>
-                <li><a href="homepage2.1.html">Homepage 2.1</a></li>
-                <li><a href="homepage2.2.html">Homepage 2.2</a></li>
-                <li class="divider"></li>
-                <li><a href="login1.html">Login 1</a></li>
-                <li class="divider"></li>
-                <li><a href="contact1.html">Contact 1</a></li>
-                <li class="divider"></li>
-                <li><a href="search1.html">Search 1</a></li>
-                <li class="divider"></li>
-                <li><a href="catalog1.html">Catalog 1</a></li>
-                <li class="divider"></li>
-                <li><a href="product1.html">Product 1</a></li>
-                <li><a href="product2.html">Product 2</a></li>
-              </ul>
-            </li>
           </ul>
           
           <form class="pull-left" action="">
@@ -226,7 +202,7 @@
             </div>
             
             <div class='cleaner_h20'></div>
-            <input type='submit' value='Sign In &raquo;' id='submit_pwd' name='submit_pwd' class="btn primary"/>
+            <input type='submit' value='Remind me &raquo;' id='submit_pwd' name='submit_pwd' class="btn primary"/>
           </form>
         </div>
       </div>
