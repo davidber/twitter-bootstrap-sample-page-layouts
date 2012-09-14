@@ -3,9 +3,9 @@
 			<div class="container">
 
 				<a class="brand" href="index.php">Project X</a>
-				<div class="nav-collapse collapse">
+				<div class="nav-collapse">
 					<ul class="nav">
-						<li class="active"><a href="#">Home</a></li>
+						<?php include "sampleList.php" ?>
 						<li><a href="http://www.sherzod.me" target="_blank">Sherzod Kutfiddinov</a></li>
 						<li><a href="http://www.schmutzka.eu" target="_blank">Schmutzka (v 2.1.1)</a></li>
 					</ul>

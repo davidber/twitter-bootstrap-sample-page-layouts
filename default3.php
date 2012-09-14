@@ -11,8 +11,7 @@
 				<div class="container-fluid">
 					<a class="brand" href="index.php">Project X</a>
 					<ul class="nav">
-						<li><a href="index.php">Home</a></li>
-						<li class="active"><a href="index.php">Sample</a></li>
+¨						<?php include "parts/sampleList.php" ?>
 					</ul>
 					<p class="navbar-text pull-right">
 						Logged in as <a href="#" class="navbar-link">Username</a>

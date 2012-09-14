@@ -3,8 +3,7 @@
 		<div class="container">
 			<a class="brand" href="index.php">Project X</a>
 			<ul class="nav">
-				<li><a href="index.php">Home</a></li>
-				<li class="active"><a href="index.php">Sample</a></li>
+				<?php include "sampleList.php" ?>
 			</ul>
 
 			<form class="navbar-form pull-left">

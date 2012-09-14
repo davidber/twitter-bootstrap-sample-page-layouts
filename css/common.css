@@ -10,3 +10,5 @@ footer {
 	text-align:center;
 	clear:both;
 }
+
+.dropdown-menu {z-index:1000}

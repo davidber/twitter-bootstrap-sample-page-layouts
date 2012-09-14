@@ -19,7 +19,7 @@
 								<li>spaces => tabs</li>
 								<li>united: <code>"</code></li>
 								<li><code>php</code> approach for faster build up (DRY)</li>
-								<li>removed stuffs unrelated to Twitter Boostrap (KISS)</li>
+								<li>removed stuffs unrelated to Twitter Bootstrap (KISS)</li>
 								<li>to see how to create this or that, just check the source of selected page</li>
 							</ul>
 						</p>
