@@ -1,0 +1,37 @@
+/* Override some defaults */
+body {
+	padding-top: 60px;
+}
+.content-row div{
+	display:inline-block;
+	width:192px;
+}
+.content-row input.btn{
+	margin:auto;
+	font-weight:bold;
+	width:100%;
+}
+img.content-thumbnail{
+	width:100%;
+}
+.title{
+	font-weight:bold;
+	font-size:18pt;
+	text-align:center;
+}
+.current-price{
+	color:#b94a48;
+	font-weight:bold;
+	font-size:22pt;
+	text-align:center;
+}
+.time-left{
+	color:#468847;
+	font-weight:bold;
+	font-size:18pt;
+	text-align:center;
+}
+.loginForm {
+	padding:15px 0 0 35px;
+	height:320px;
+}

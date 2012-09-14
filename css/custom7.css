@@ -1,0 +1,12 @@
+body {
+	padding-top: 60px;
+}
+.switch{
+	display:inline-block;
+	cursor:pointer;
+}
+
+.signForm {
+	padding:15px 0 0 35px;
+	height:360px;
+}

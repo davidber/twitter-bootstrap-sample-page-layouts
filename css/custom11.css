@@ -1,0 +1,34 @@
+body {
+	padding-top: 60px;
+}
+.navbar .container, .container {
+	width:88%;
+}
+#thumbnails{
+	text-align:center;
+}
+#thumbnails img{
+	max-height:150px;
+	max-width:240px;
+	vertical-align:middle;
+	cursor:pointer;
+}
+#flag span.label{
+	cursor:pointer;
+}
+#next_thumb, #prev_thumb{
+	font-size:25pt;
+	padding-top:65px;
+	height:85px;
+	width:30px;
+	text-align:center;
+	cursor:pointer;
+}
+#next_thumb:hover, #prev_thumb:hover{
+	background-color:#eee;
+}
+.borderTop {
+	border-top:1px solid #EEE;
+	margin-top:10px;
+	padding-top:15px;
+}

@@ -1,0 +1,13 @@
+body {
+	padding-top: 80px;
+}
+.navbar .container, .container {
+	width:88%;
+}
+.sidebar.well.span4{
+	width: 180px;
+}
+.switch{
+	display:inline-block;
+	cursor:pointer;
+}
