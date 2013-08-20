@@ -1,0 +1,23 @@
+body {
+	padding-top: 80px;
+}
+.navbar .container, .container {
+	width:88%;
+}
+.sidebar.well.span4{
+	width: 180px;
+}
+.ads tbody tr td{
+	cursor:pointer !important;
+}
+.highlight td{
+	font-weight:bold;
+}
+td.mini-thumbnail img{
+	max-height:50px;
+	max-width:100px;
+}
+td.mini-thumbnail{
+	text-align:center;
+}
+

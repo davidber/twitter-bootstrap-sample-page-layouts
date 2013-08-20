@@ -1,0 +1,26 @@
+body {
+	padding-top: 60px;
+}
+h1{
+	font-size:36pt;
+}
+footer p {
+	text-align:center;
+}
+footer{
+	position:absolute;
+	bottom:5px;
+	width:100%;
+	margin-top:15px;
+	padding-top:10px;
+	border-top:1px solid #EEE;
+	text-align:center;
+}
+.main-content{
+	margin-top:100px;
+	text-align:center;
+}
+.navbar .container, .container {
+	width:98%;
+}
+hr {border:none}

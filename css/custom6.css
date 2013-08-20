@@ -1,0 +1,7 @@
+body {
+	padding-top: 60px;
+}
+.switch{
+	display:inline-block;
+	cursor:pointer;
+}

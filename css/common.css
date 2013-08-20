@@ -1,0 +1,14 @@
+/* 40px to make the container go all the way to the bottom of the topbar */
+body {
+	padding-top: 40px; 
+}
+
+footer {
+	margin-top:15px;
+	padding-top:10px;
+	border-top:1px solid #EEE;
+	text-align:center;
+	clear:both;
+}
+
+.dropdown-menu {z-index:1000}
